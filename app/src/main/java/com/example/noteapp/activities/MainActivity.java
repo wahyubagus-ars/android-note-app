@@ -1,4 +1,4 @@
-package com.example.noteapp;
+package com.example.noteapp.activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+
+import com.example.noteapp.R;
+import com.example.noteapp.activities.CreateNoteActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -19,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
         imageAddNoteMain.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivityForResult(
-                        new Intent(getApplicationContext(), CreateNoteActivity.class), REQUEST_CODE_ADD_NOTE
+                startActivity(
+                        new Intent(getApplicationContext(), CreateNoteActivity.class)
                 );
             }
         });
