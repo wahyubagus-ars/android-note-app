@@ -27,7 +27,7 @@
                     android:layout_marginEnd="@dimen/_12sdp"
                     android:layout_marginRight="@dimen/_12sdp"
                     android:contentDescription="@string/app_name"
-                    android:src="@drawable/ic_back"
+                    app:srcCompat="@drawable/ic_back"
                     app:tint="@color/colorIcons"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
@@ -41,7 +41,7 @@
                     android:background="@drawable/background_done_button"
                     android:contentDescription="@string/app_name"
                     android:padding="@dimen/_4sdp"
-                    android:src="@drawable/ic_done"
+                    app:srcCompat="@drawable/ic_done"
                     app:tint="@color/colorIcons"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="@id/imageBack" />
