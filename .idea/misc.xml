@@ -3,6 +3,7 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_dialog.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_done_button.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_miscellaneous.xml" value="0.14290540540540542" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/drawable/background_note.xml" value="0.14290540540540542" />
@@ -17,6 +18,7 @@
         <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_create_note.xml" value="0.16" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/layout/activity_main.xml" value="0.15" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/layout/item_container_note.xml" value="0.16" />
+        <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/layout/layout_add_url.xml" value="0.16" />
         <entry key="..\:/Users/babay/AndroidStudioProjects/NoteApp/app/src/main/res/layout/layout_miscellaneous.xml" value="0.18" />
       </map>
     </option>
