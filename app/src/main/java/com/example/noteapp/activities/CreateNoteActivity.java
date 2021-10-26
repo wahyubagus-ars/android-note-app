@@ -103,6 +103,25 @@ public class CreateNoteActivity extends AppCompatActivity {
             alreadyAvailableNotes = (Note) getIntent().getSerializableExtra("note");
             setViewOrUpdateNote();
         }
+
+        findViewById(R.id.imageRemoveWebUrl).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                textWebUrl.setText(null);
+                layoutWebUrl.setVisibility(View.GONE);
+            }
+        });
+
+        findViewById(R.id.imageRemoveImage).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                imageNote.setImageBitmap(null);
+                imageNote.setVisibility(View.GONE);
+                findViewById(R.id.imageRemoveImage).setVisibility(View.GONE);
+                selectedImagePath = "";
+            }
+        });
+
         initMiscellaneous();
     }
 
@@ -112,9 +131,11 @@ public class CreateNoteActivity extends AppCompatActivity {
         inputNoteText.setText(alreadyAvailableNotes.getNoteText());
         textDateTime.setText(alreadyAvailableNotes.getDateTime());
 
+
         if (alreadyAvailableNotes.getImagePath() != null && !alreadyAvailableNotes.getImagePath().trim().isEmpty()){
             imageNote.setImageBitmap(BitmapFactory.decodeFile(alreadyAvailableNotes.getImagePath()));
             imageNote.setVisibility(View.VISIBLE);
+            findViewById(R.id.imageRemoveImage).setVisibility(View.VISIBLE);
             selectedImagePath = alreadyAvailableNotes.getImagePath();
         }
 
@@ -333,6 +354,7 @@ public class CreateNoteActivity extends AppCompatActivity {
                         Bitmap bitmap = BitmapFactory.decodeStream(inputStream);
                         imageNote.setImageBitmap(bitmap);
                         imageNote.setVisibility(View.VISIBLE);
+                        findViewById(R.id.imageRemoveImage).setVisibility(View.VISIBLE);
 
                         selectedImagePath = getPathFromUri(selectedImageUri);
                     } catch (Exception e){
