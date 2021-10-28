@@ -12,4 +12,6 @@
     <string name="enter_url">Enter url</string>
     <string name="add">ADD</string>
     <string name="cancel">CANCEL</string>
+    <string name="delete_note">Delete Note</string>
+    <string name="are_you_sure_to_delete_this_note">Are you sure to delete this note?</string>
 </resources>
